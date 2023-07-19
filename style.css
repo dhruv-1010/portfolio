@@ -218,7 +218,7 @@ a{
 #section-2 #skill-1{
     animation-name:movel;
     animation-duration: 4s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
     
     animation-fill-mode: both;
@@ -231,7 +231,7 @@ a{
     right:28vw;
     animation-name:move_l;
     animation-duration: 4s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
     
     animation-fill-mode: both;
@@ -243,7 +243,7 @@ a{
     right:-40vw;
     animation-name:move_g;
     animation-duration: 4s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     animation-direction:alternate;
     animation-fill-mode: both;
 }
@@ -316,7 +316,7 @@ a{
 }
 @keyframes ror {
     100%{
-        transform: rotate(-5deg);
+        transform: rotate(-3deg);
     }
 }
 #parent{
@@ -349,11 +349,6 @@ top:20vw;
     top:5vw;
     right:10vw;
 }
-
-
-
-
-
 
 
 
@@ -532,3 +527,9 @@ top:20vw;
   #nav #logo .slider.round:before {
     border-radius: 50%;
   } */
+
+  @media only screen and (max-width: 600px) {
+  #nav #list {
+    display:none ;
+  }
+}
